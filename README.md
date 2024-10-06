@@ -1,7 +1,7 @@
-# Option Pricing Project
+# European Option Pricing Calculator
 
 This project calculates the price and Greeks (Delta, Gamma, Vega, Theta) of European options 
-using the Cumulative normal distribution function with Abramowitz and Stegun approximation.
+using the cumulative normal distribution function with Abramowitz and Stegun approximation.
 
 ## Build Instructions
 
