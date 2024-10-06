@@ -1,0 +1,20 @@
+# Compiled object files
+*.o
+
+# Compiled dynamic libraries
+*.so
+
+# Compiled static libraries
+*.a
+
+# Executable files
+*.out
+*.exe
+
+# Backup files
+*~
+
+# CLion specific files
+.idea/
+cmake-build-debug/
+cmake-build-release/
