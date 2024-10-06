@@ -92,7 +92,7 @@ double calculate_theta(double d1, double d2, double S, double K, double T, doubl
                option_type * d2);
 }
 
-ResponseOptionParameters *calculateOption(RequestOptionParameters *request) {
+ResponseOptionParameters *calculate_option(RequestOptionParameters *request) {
     ResponseOptionParameters *response = malloc(sizeof(ResponseOptionParameters));
     if (response == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
@@ -113,7 +113,7 @@ ResponseOptionParameters *calculateOption(RequestOptionParameters *request) {
     return response;
 }
 
-void displayOption(ResponseOptionParameters *response) {
+void display_option(ResponseOptionParameters *response) {
     printf("\n");
     printf("Option Parameters:\n");
     printf("Price: %.2f\n", response->price);
@@ -166,9 +166,9 @@ int main() {
         get_user_input(&S, &K, &T, &r, &sigma, &type);
 
         RequestOptionParameters *request = init_option_parameters(S, K, T, r, sigma, type);
-        ResponseOptionParameters *response = calculateOption(request);
+        ResponseOptionParameters *response = calculate_option(request);
 
-        displayOption(response);
+        display_option(response);
 
         free(request);
         free(response);
